@@ -1,7 +1,7 @@
 {
 	"name": "@snickbit/ansi",
 	"description": "Cross-platform replacement for chalk/ansi-* modules.",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"license": "MIT",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
@@ -27,8 +27,7 @@
 		"prod": "npm run clean && npm run build --minify",
 		"docs": "typedoc"
 	},
-	"dependencies": {
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"@remedyred/indexer": "^2.0.77",
 		"jest": "^27.5.1",
