@@ -1,0 +1,11 @@
+[
+	{
+		"index": "src/index.js",
+		"files": [
+			{
+				"export": "individual",
+				"dir": "src"
+			}
+		]
+	}
+]
