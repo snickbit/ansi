@@ -20,7 +20,7 @@
 	"scripts": {
 		"clean": "shx rm -rf ./dist ",
 		"depcheck": "depcheck",
-		"test": "jest --passWithNoTests",
+		"test": "jest",
 		"build": "tsup",
 		"meta": "npm run prod -- --metafile",
 		"watch": "npm run build -- --watch",
