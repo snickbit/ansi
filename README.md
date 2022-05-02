@@ -38,4 +38,4 @@ const {ansiStyles, ansiRegex, stripAnsi} = require('@snickbit/ansi');
 
 Copyright (c) 2022 - **Nicholas Lowe** aka **Snickbit**
 
-[MIT License](https://github.com/snickbit/ansi/blob/master/LICENSE)
+[MIT License](https://github.com/snickbit/ansi/blob/main/LICENSE)
