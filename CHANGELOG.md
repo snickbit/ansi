@@ -1,5 +1,13 @@
 # @snickbit/ansi Changelog
 
+## 0.0.3
+
+### Patch Changes
+
+- [78c895c](https://github.com/snickbit/ansi/commit/78c895c) **build**:  add dev watcher scripts with source maps
+- [6696856](https://github.com/snickbit/ansi/commit/6696856) **chore**:  adjust configurations
+
+
 ## 0.0.2
 
 ### Patch Changes
