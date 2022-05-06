@@ -28,12 +28,11 @@
 		"prod": "npm run clean && npm run build -- --minify",
 		"docs": "typedoc"
 	},
-	"dependencies": {},
 	"devDependencies": {
-		"@remedyred/indexer": "^2.0.77",
+		"@remedyred/indexer": "^2.0.79",
 		"jest": "^27.5.1",
 		"shx": "^0.3.4",
-		"tsup": "^5.12.6",
+		"tsup": "^5.12.7",
 		"typedoc": "^0.22.15",
 		"typedoc-plugin-markdown": "^3.12.0",
 		"typescript": "^4.6.3"
