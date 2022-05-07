@@ -1,5 +1,13 @@
 # @snickbit/ansi Changelog
 
+## 0.0.4
+
+### Patch Changes
+
+- [088c38c](https://github.com/snickbit/ansi/commit/088c38c) **style**:  reformat
+- [da1ee2a](https://github.com/snickbit/ansi/commit/da1ee2a) **chore**:  update dependencies
+
+
 ## 0.0.3
 
 ### Patch Changes
