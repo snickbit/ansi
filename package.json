@@ -29,7 +29,7 @@
 		"docs": "typedoc"
 	},
 	"devDependencies": {
-		"@remedyred/indexer": "^2.0.79",
+		"@remedyred/indexer": "^2.1.1",
 		"jest": "^27.5.1",
 		"shx": "^0.3.4",
 		"tsup": "^5.12.7",
