@@ -29,7 +29,6 @@
 		"testEnvironment": "node"
 	},
 	"devDependencies": {
-		"@remedyred/indexer": "^2.1.1",
 		"jest": "^27.5.1",
 		"shx": "^0.3.4",
 		"tsup": "^5.12.7",
