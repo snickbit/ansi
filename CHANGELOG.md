@@ -1,12 +1,19 @@
 # @snickbit/ansi Changelog
 
+## 0.0.5
+
+### Patch Changes
+
+- [f313f18](https://github.com/snickbit/ansi/commit/f313f18) **build**:  switch to pnpm for running
+- [03fd5fa](https://github.com/snickbit/ansi/commit/03fd5fa) **chore**:  sort package.json
+- [46f4d6b](https://github.com/snickbit/ansi/commit/46f4d6b) **build**:  bump indexer, regenerate indexes
+
 ## 0.0.4
 
 ### Patch Changes
 
 - [088c38c](https://github.com/snickbit/ansi/commit/088c38c) **style**:  reformat
 - [da1ee2a](https://github.com/snickbit/ansi/commit/da1ee2a) **chore**:  update dependencies
-
 
 ## 0.0.3
 
