@@ -1,5 +1,11 @@
 # @snickbit/ansi Changelog
 
+## 0.0.7
+
+### Patch Changes
+
+- [94fbc31](https://github.com/snickbit/ansi/commit/94fbc31) **chore**:  update indexer and indexer config
+
 ## 0.0.6
 
 ### Patch Changes
