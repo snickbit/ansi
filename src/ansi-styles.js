@@ -105,7 +105,7 @@ function assembleStyles() {
 	// From https://github.com/Qix-/color-convert/blob/3f0e0d4e92e235796ccb17f6e85c72094a651f49/conversions.js
 	Object.defineProperties(styles, {
 		rgbToAnsi256: {
-			value: (red, green, blue) => {
+			value(red, green, blue) {
 				// We use the extended greyscale palette here, with the exception of
 				// black and white. normal palette only has 4 greyscale shades.
 				if (red === green && green === blue) {
@@ -117,18 +117,18 @@ function assembleStyles() {
 						return 231
 					}
 
-					return Math.round(((red - 8) / 247) * 24) + 232
+					return Math.round((red - 8) / 247 * 24) + 232
 				}
 
 				return 16 +
-					(36 * Math.round(red / 255 * 5)) +
-					(6 * Math.round(green / 255 * 5)) +
+					36 * Math.round(red / 255 * 5) +
+					6 * Math.round(green / 255 * 5) +
 					Math.round(blue / 255 * 5)
 			},
 			enumerable: false
 		},
 		hexToRgb: {
-			value: hex => {
+			value(hex) {
 				const matches = /(?<colorString>[a-f\d]{6}|[a-f\d]{3})/i.exec(hex.toString(16))
 				if (!matches) {
 					return [0, 0, 0]
@@ -137,16 +137,13 @@ function assembleStyles() {
 				let {colorString} = matches.groups
 
 				if (colorString.length === 3) {
-					colorString = colorString.split('').map(character => character + character).join('')
+					colorString = colorString.split('').map(character => character + character)
+						.join('')
 				}
 
 				const integer = Number.parseInt(colorString, 16)
 
-				return [
-					(integer >> 16) & 0xFF,
-					(integer >> 8) & 0xFF,
-					integer & 0xFF
-				]
+				return [integer >> 16 & 0xFF, integer >> 8 & 0xFF, integer & 0xFF]
 			},
 			enumerable: false
 		},
@@ -155,7 +152,7 @@ function assembleStyles() {
 			enumerable: false
 		},
 		ansi256ToAnsi: {
-			value: code => {
+			value(code) {
 				if (code < 8) {
 					return 30 + code
 				}
@@ -169,7 +166,7 @@ function assembleStyles() {
 				let blue
 
 				if (code >= 232) {
-					red = (((code - 232) * 10) + 8) / 255
+					red = ((code - 232) * 10 + 8) / 255
 					green = red
 					blue = red
 				} else {
@@ -179,7 +176,7 @@ function assembleStyles() {
 
 					red = Math.floor(code / 36) / 5
 					green = Math.floor(remainder / 6) / 5
-					blue = (remainder % 6) / 5
+					blue = remainder % 6 / 5
 				}
 
 				const value = Math.max(red, green, blue) * 2
@@ -188,7 +185,7 @@ function assembleStyles() {
 					return 30
 				}
 
-				let result = 30 + ((Math.round(blue) << 2) | (Math.round(green) << 1) | Math.round(red))
+				let result = 30 + (Math.round(blue) << 2 | Math.round(green) << 1 | Math.round(red))
 
 				if (value === 2) {
 					result += 60
