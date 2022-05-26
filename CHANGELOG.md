@@ -1,5 +1,13 @@
 # @snickbit/ansi Changelog
 
+## 0.0.8
+
+### Patch Changes
+
+- [172765f](https://github.com/snickbit/ansi/commit/172765f) **style**:  heavy code restyling
+- [38d3509](https://github.com/snickbit/ansi/commit/38d3509) **chore**:  bump dependencies
+- [81b707c](https://github.com/snickbit/ansi/commit/81b707c) **build**:  switch to pnpm
+
 ## 0.0.7
 
 ### Patch Changes
