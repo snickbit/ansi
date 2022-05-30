@@ -19,11 +19,11 @@ export interface ColorBase {
 	 */
 	readonly close: string
 
-	ansi: (code: number) => string
+	ansi(code: number): string
 
-	ansi256: (code: number) => string
+	ansi256(code: number): string
 
-	ansi16m: (red: number, green: number, blue: number) => string
+	ansi16m(red: number, green: number, blue: number): string
 }
 
 export interface Modifier {
@@ -145,28 +145,28 @@ export interface ConvertColor {
 	@param green - (`0...255`)
 	@param blue - (`0...255`)
 	 */
-	rgbToAnsi256: (red: number, green: number, blue: number) => number
+	rgbToAnsi256(red: number, green: number, blue: number): number
 
 	/**
 	Convert from the RGB HEX color space to the RGB color space.
 
 	@param hex - A hexadecimal string containing RGB data.
 	 */
-	hexToRgb: (hex: string) => [red: number, green: number, blue: number]
+	hexToRgb(hex: string): [red: number, green: number, blue: number]
 
 	/**
 	Convert from the RGB HEX color space to the ANSI 256 color space.
 
 	@param hex - A hexadecimal string containing RGB data.
 	 */
-	hexToAnsi256: (hex: string) => number
+	hexToAnsi256(hex: string): number
 
 	/**
 	Convert from the ANSI 256 color space to the ANSI 16 color space.
 
 	@param code - A number representing the ANSI 256 color.
 	 */
-	ansi256ToAnsi: (code: number) => number
+	ansi256ToAnsi(code: number): number
 
 	/**
 	Convert from the RGB color space to the ANSI 16 color space.
@@ -175,14 +175,14 @@ export interface ConvertColor {
 	@param green - (`0...255`)
 	@param blue - (`0...255`)
 	 */
-	rgbToAnsi: (red: number, green: number, blue: number) => number
+	rgbToAnsi(red: number, green: number, blue: number): number
 
 	/**
 	Convert from the RGB HEX color space to the ANSI 16 color space.
 
 	@param hex - A hexadecimal string containing RGB data.
 	 */
-	hexToAnsi: (hex: string) => number
+	hexToAnsi(hex: string): number
 }
 
 export const ansiStyles: BackgroundColor & ConvertColor & ForegroundColor & Modifier & {
