@@ -1,5 +1,12 @@
 # @snickbit/ansi Changelog
 
+## 0.0.9
+
+### Patch Changes
+
+- [333a344](https://github.com/snickbit/ansi/commit/333a344) **chore**:  update dependencies
+- [a178f40](https://github.com/snickbit/ansi/commit/a178f40) **style**:  lint
+
 ## 0.0.8
 
 ### Patch Changes
