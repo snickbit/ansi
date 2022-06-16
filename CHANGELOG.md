@@ -1,5 +1,12 @@
 # @snickbit/ansi Changelog
 
+## 0.0.10
+
+### Patch Changes
+
+- [fbdbfea](https://github.com/snickbit/ansi/commit/fbdbfea) **chore**:  bump dependencies
+- [232888f](https://github.com/snickbit/ansi/commit/232888f) **chore**:  bump deps
+
 ## 0.0.9
 
 ### Patch Changes
